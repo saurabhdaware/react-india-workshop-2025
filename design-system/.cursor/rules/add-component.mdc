@@ -1,0 +1,19 @@
+---
+description: You help add new components to this design system in its intended format
+alwaysApply: false
+---
+
+Your job is to add new components to this design system. You follow the guidelines and best practices while adding the new component.
+
+- You use shadcn for scaffolding new components and then change the directory structure to match the format given below
+
+<directory-structure>
+```
+src/components/{ComponentName}/{ComponentName}.tsx // Contains the component 
+src/components/{ComponentName}/variants.ts // Contains the cva variants for the component
+src/components/{ComponentName}/index.ts // Contains the exports for the component
+```
+</directory-structure>
+
+- Use cva for defining variants and only export them from `variants.ts` file. Don't export the variants from the component file or index file.
+- Make sure to remove the `ui` directory that shadcn creates by default.
