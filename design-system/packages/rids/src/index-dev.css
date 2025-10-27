@@ -1,0 +1,5 @@
+/* This file is only there for dev-server of ds library*/
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./index.css";
