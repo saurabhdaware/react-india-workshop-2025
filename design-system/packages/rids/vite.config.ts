@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -20,6 +21,14 @@ export default defineConfig({
       ],
       tsconfigPath: "./tsconfig.app.json",
       rollupTypes: false, // Keep separate .d.ts files to match preserved structure
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "src/index.css",
+          dest: ".",
+        },
+      ],
     }),
   ],
   resolve: {
@@ -53,8 +62,10 @@ export default defineConfig({
         preserveModules: true,
         preserveModulesRoot: "src",
         entryFileNames: "[name].js",
+        assetFileNames: "[name][extname]",
       },
     },
     sourcemap: true,
+    cssCodeSplit: false, // Bundle all CSS into a single file
   },
 });

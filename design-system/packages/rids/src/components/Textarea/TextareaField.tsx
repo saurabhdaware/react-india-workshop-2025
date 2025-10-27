@@ -21,8 +21,8 @@ export interface TextareaFieldProps<
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
 > extends Omit<React.ComponentProps<"textarea">, "name">,
     VariantProps<typeof textareaVariants> {
-  control: Control<TFieldValues>;
-  name: TName;
+  control?: Control<TFieldValues>;
+  name?: TName;
   label?: string;
   description?: string;
 }
@@ -39,26 +39,41 @@ export function TextareaField<
   className,
   ...props
 }: TextareaFieldProps<TFieldValues, TName>) {
+  // If control is provided, use react-hook-form integration
+  if (control && name) {
+    return (
+      <FormField
+        control={control}
+        name={name}
+        render={({ field }) => (
+          <FormItem>
+            {label && <FormLabel>{label}</FormLabel>}
+            <FormControl>
+              <Textarea
+                variant={variant}
+                className={className}
+                {...props}
+                {...field}
+              />
+            </FormControl>
+            {description && <FormDescription>{description}</FormDescription>}
+            <FormMessage />
+          </FormItem>
+        )}
+      />
+    );
+  }
+
+  // Otherwise, render a simple uncontrolled textarea
   return (
-    <FormField
-      control={control}
-      name={name}
-      render={({ field }) => (
-        <FormItem>
-          {label && <FormLabel>{label}</FormLabel>}
-          <FormControl>
-            <Textarea
-              variant={variant}
-              className={className}
-              {...props}
-              {...field}
-            />
-          </FormControl>
-          {description && <FormDescription>{description}</FormDescription>}
-          <FormMessage />
-        </FormItem>
-      )}
-    />
+    <FormItem>
+      {label && <FormLabel>{label}</FormLabel>}
+      <FormControl>
+        <Textarea variant={variant} className={className} {...props} />
+      </FormControl>
+      {description && <FormDescription>{description}</FormDescription>}
+      <FormMessage />
+    </FormItem>
   );
 }
 
