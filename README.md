@@ -99,6 +99,10 @@
   </output_format>
   ```
 
+---
+
+Rough beyond this line
+
 ## Codebase Knowledge
 
 - Cursor codebase indexing
@@ -124,3 +128,8 @@
   - LangSmith
 
 - Make AI agent call from frontend
+
+## Demo
+
+- We want to create an MCP tool that gives the context of our design system to the AI agent.
+- We then want to create an AI agent that can be called from a frontend application to help answer questions about the design system.
