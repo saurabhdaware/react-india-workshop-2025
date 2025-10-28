@@ -133,3 +133,16 @@ Rough beyond this line
 
 - We want to create an MCP tool that gives the context of our design system to the AI agent.
 - We then want to create an AI agent that can be called from a frontend application to help answer questions about the design system.
+
+### Outline
+
+- What are we building?
+  - We want to enable AI to use our components and build frontends from just prompts.
+- What are Cursor Rules?
+  - write `get-weather.mdc` cursor rule
+  - write `create-knowledgebase.mdc` cursor rule
+- Create knowledgebase for design-system
+- What is MCP?
+- Create MCP tool that gives the context of our design system to the AI agent
+- What are AI Agents?
+- Create AI agent that can be called from a frontend application to help answer questions about the design system
