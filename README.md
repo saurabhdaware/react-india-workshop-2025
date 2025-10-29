@@ -99,6 +99,10 @@
   </output_format>
   ```
 
+---
+
+Rough beyond this line
+
 ## Codebase Knowledge
 
 - Cursor codebase indexing
@@ -124,3 +128,50 @@
   - LangSmith
 
 - Make AI agent call from frontend
+
+## Demo
+
+- We want to create an MCP tool that gives the context of our design system to the AI agent.
+- We then want to create an AI agent that can be called from a frontend application to help answer questions about the design system.
+
+### Outline
+
+- What are we building?
+  - We want to enable AI to use our components and build frontends from just prompts.
+- What are Cursor Rules?
+  - write `get-weather.mdc` cursor rule
+  - write `create-knowledgebase.mdc` cursor rule
+- Create knowledgebase for design-system
+- What is MCP?
+- Create MCP tool that gives the context of our design system to the AI agent
+- What are AI Agents?
+- Create AI agent that can be called from a frontend application to help answer questions about the design system
+
+## Random Ideas and TODO
+
+- Repo setup
+  - [x] Publish own versions of the libraries
+- Prepare `main` branch with empty app directory
+  - Try out weather cursor rules and prompt engineering demos here `get-weather.mdc`
+- BUILD THE FINAL WORKSHOP THING
+  - Architecture and Problem Statement Explanation
+  - Knowledgebase Creation using Cursor Rule `create-knowledgebase.mdc`
+  - What is MCP?
+  - Create MCP tool that gives the context of our design system to the AI agent
+  - What are AI Agents?
+  - Create AI agent that can be called from a frontend application to help answer questions about the design system
+
+Three major sections of workshop
+
+Goal: Build production-grade UIs with Prompts
+
+- Talk
+- Talk with Demos that you can play around
+- Hands on Workshop where we build AI tools for a design system
+
+## Branches
+
+- `main`: app and design-system in place
+- `cursor-rules`: cursor rules for building knowledgebase (along with built knowledgebases for components)
+- `mcp`: MCP server that fetches and returns this knowledgebase to the AI agent
+- `ai-agent`: AI agent that uses MCP tools along with gemini model
