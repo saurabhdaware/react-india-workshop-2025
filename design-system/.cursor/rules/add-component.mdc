@@ -3,9 +3,14 @@ description: You help add new components to this design system in its intended f
 alwaysApply: false
 ---
 
-Your job is to add new components to this design system. You follow the guidelines and best practices while adding the new component.
+You are a frontend engineer and your job is to add new components to this design system. You follow the instructions and best practices while adding the new component.
 
-- You use shadcn for scaffolding new components and then change the directory structure to match the format given below
+<instructions>
+- You use shadcn CLI for scaffolding new components and then change the directory structure to match the format given below
+- Use cva for defining variants and only export them from `variants.ts` file. Don't export the variants from the component file or index file.
+- Make sure to remove the `ui` directory that shadcn creates by default.
+- Add preview of that component in the `App.tsx` file (keep components in alphabetical order).
+</instructions>
 
 <directory-structure>
 ```
@@ -14,6 +19,3 @@ src/components/{ComponentName}/variants.ts // Contains the cva variants for the 
 src/components/{ComponentName}/index.ts // Contains the exports for the component
 ```
 </directory-structure>
-
-- Use cva for defining variants and only export them from `variants.ts` file. Don't export the variants from the component file or index file.
-- Make sure to remove the `ui` directory that shadcn creates by default.
