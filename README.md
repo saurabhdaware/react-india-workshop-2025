@@ -146,3 +146,25 @@ Rough beyond this line
 - Create MCP tool that gives the context of our design system to the AI agent
 - What are AI Agents?
 - Create AI agent that can be called from a frontend application to help answer questions about the design system
+
+## Random Ideas and TODO
+
+- Repo setup
+  - [x] Publish own versions of the libraries
+- Prepare `main` branch with empty app directory
+  - Try out weather cursor rules and prompt engineering demos here `get-weather.mdc`
+- BUILD THE FINAL WORKSHOP THING
+  - Architecture and Problem Statement Explanation
+  - Knowledgebase Creation using Cursor Rule `create-knowledgebase.mdc`
+  - What is MCP?
+  - Create MCP tool that gives the context of our design system to the AI agent
+  - What are AI Agents?
+  - Create AI agent that can be called from a frontend application to help answer questions about the design system
+
+Three major sections of workshop
+
+Goal: Build production-grade UIs with Prompts
+
+- Talk
+- Talk with Demos that you can play around
+- Hands on Workshop where we build AI tools for a design system
