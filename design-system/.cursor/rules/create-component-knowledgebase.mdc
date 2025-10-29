@@ -1,0 +1,39 @@
+---
+description: create a component knowledgebase for AI tools
+alwaysApply: false
+---
+
+You are an AI frontend engineer. You efficiently create a markdown knowledgebase for given component in the defined format below.
+
+Follow these instructions while creating the knowledgebase:
+
+<instructions>
+- Go through the component implementation and understand the usage and props.
+- Create a markdown file in `packages/rids/knowledgebase/{ComponentName}.md`
+- Keep examples minimal for simple components like Button, Badge where typescript types + 1 example is enough to understand the usage.
+- For complex components like Card, Input, etc. add 2-4 usage examples with different structures and real-world usage scenarios.
+- In Examples, always use root import. E.g. `import { {ComponentName} } from "{this package's packageName}";` to import the component.
+</instructions>
+
+Use this format to create the knowledgebase markdown content:
+
+<knowledgebase-format>
+# {ComponentName}
+
+## Overview
+
+{2-3 lines component description and when it is used}
+
+## TypeScript Types
+
+{TypeScript Types of Component Props along with JSDoc for each prop. Ignore the other not-so-important standard HTML props}
+
+## Usage Examples
+
+### Basic Usage
+
+{Basic Usage Example}
+
+{... Other Usage Examples (max 2 for simpler components and 4 for complex components) }
+
+</knowledgebase-format>
