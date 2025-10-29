@@ -168,3 +168,10 @@ Goal: Build production-grade UIs with Prompts
 - Talk
 - Talk with Demos that you can play around
 - Hands on Workshop where we build AI tools for a design system
+
+## Branches
+
+- `main`: app and design-system in place
+- `cursor-rules`: cursor rules for building knowledgebase (along with built knowledgebases for components)
+- `mcp`: MCP server that fetches and returns this knowledgebase to the AI agent
+- `ai-agent`: AI agent that uses MCP tools along with gemini model
