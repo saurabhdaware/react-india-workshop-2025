@@ -22,7 +22,7 @@ const availableComponentNames = availableComponent.map((component) =>
 
 server.tool(
   "get_docs",
-  "Get design system component documentation for a given list of components",
+  "Get design system component documentation of rids design system for a given list of components",
   {
     componentNames: z
       .string()
