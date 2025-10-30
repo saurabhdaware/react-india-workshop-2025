@@ -25,7 +25,7 @@
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/saurabhdaware/react-india-workshop.git
+   git clone git@github.com:saurabhdaware/react-india-workshop-2025.git
    ```
 
 2. Open the `app` directory and `design-system` directory in two separate windows of Cursor.
@@ -36,7 +36,7 @@
    cursor design-system/
    ```
 
-## Prompt Engineering
+## Prompt Engineering Tips
 
 - **Be specific and elaborate**
 
@@ -99,28 +99,13 @@
   </output_format>
   ```
 
-## Codebase Knowledge
+## Links / Referrences
 
-- Cursor codebase indexing
-  - Embeddings
-  - Vectors
-  - Semantic Search
-- Cursor rules
-- User rules
-
-## Libraries Context
-
-- MCP (Model Context Protocol)
-
-  - Google Calendar MCP Server
-  - Creating our own MCP Server
-    - get docs tool call
-    - scaffold project call
-
-- AI Agents
-
-  - LangGraph
-  - LangChain
-  - LangSmith
-
-- Make AI agent call from frontend
+- [Live Gist](https://gist.github.com/saurabhdaware/e40d8327041a53d273967d2e0d40ea2d) (This will be used for copy-pasting snippets for audience)
+- **MCP**
+  - [Build MCP Server - Node.js](https://modelcontextprotocol.io/docs/develop/build-server#node)
+- **AI Agents**
+  - [Google AI Studio / API Keys page](https://aistudio.google.com/api-keys)
+  - [LangChain Agents](https://docs.langchain.com/oss/javascript/langchain/overview)
+  - [LangChain Gemini](https://www.npmjs.com/package/@langchain/google-genai)
+  - [LangChain MCP Adapters](https://www.npmjs.com/package/@langchain/mcp-adapters)
