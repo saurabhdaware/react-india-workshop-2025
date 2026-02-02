@@ -73,12 +73,6 @@
   ✅ Use react hook form library
   ```
 
-- **Advanced: Reason and Act (ReAct)**
-
-  ```md
-  First, think step-by-step and decide the best approach to refactor the code. Then, after the reasoning, write the actual refactored code in a code block.
-  ```
-
 - **Advanced: Structured Prompting (XML / Markdown)**
 
   https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags#example-legal-contract-analysis
